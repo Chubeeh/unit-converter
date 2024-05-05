@@ -5,26 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <title>Unit converter</title>
 </head>
 
 <body>
     <div class="container">
-        <h1>Metric or Imperial Unit Converter</h1>
-        <input type="number" id="input-el" />
-        <div>
-            <button id="convert-btn">Convert</button>
-            <button id="reset-btn">Reset</button>
+        <div class="main-section">
+            <h1>Metric or Imperial Unit Converter</h1>
+            <input type="number" id="input-el" />
+            <div class="btn-section">
+                <button id="convert-btn">Convert</button>
+                <button id="reset-btn">Reset</button>
+            </div>
         </div>
-        <div>
-            <div id="length-el" class="conversion-el">
-                <h2>Length (Meter/Feet)</h2>
+        <div class="convert-section">
+            <div class="conversion-el">
+                <h3>Length (Meter/Feet)</h3>
+                <p id="length-el">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
             </div>
-            <div id="volume-el" class="conversion-el">
-                <h2>Volume (Liters/Gallons)</h2>
+            <div class="conversion-el">
+                <h3>Volume (Liters/Gallons)</h3>
+                <p id="volume-el">0 liters= 0.000 gallons | 0 gallons = 0.000 liters</p>
             </div>
-            <div id="mass-el" class="conversion-el">
-                <h2>Mass (Kilograms/Pounds)</h2>
+            <div class="conversion-el">
+                <h3>Mass (Kilograms/Pounds)</h3>
+                <p id="mass-el">0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
             </div>
         </div>
     </div>
